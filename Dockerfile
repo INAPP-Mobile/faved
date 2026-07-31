@@ -12,3 +12,10 @@ RUN a2dismod mpm_event mpm_worker || true \
  && a2enmod mpm_prefork \
  && a2dismod mpm_event mpm_worker || true \
  && apache2ctl configtest
+
+# Runtime wrapper: logs the live MPM state (diagnosing AH00534 on Railway),
+# forces a single MPM, then starts Apache normally.
+COPY start.sh /usr/local/bin/faved-start.sh
+RUN chmod +x /usr/local/bin/faved-start.sh
+
+CMD ["/usr/local/bin/faved-start.sh"]
