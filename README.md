@@ -2,7 +2,7 @@
 
 A lightweight, privacy-first bookmark manager with a clean, fast UI — self-hosted on Railway.
 
-[![Deploy to Railway](https://railway.app/button.svg)](https://railway.com/deploy/faved-1)
+[![Deploy to Railway](https://railway.app/button.svg)](https://railway.com/deploy/zOL7cT)
 
 ## Features
 
