@@ -1,6 +1,1 @@
-{
-  "PORT": {
-    "value": "80",
-    "description": "HTTP port. Railway injects PORT for routing; Faved listens on port 80."
-  }
-}
+{}
