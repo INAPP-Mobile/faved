@@ -1,4 +1,6 @@
-FROM denho/faved:latest
+# Pinned to the exact digest verified healthy on Railway (equals :latest / 2.9.1 as
+# of 2026-07-31). Avoids :latest tag drift between builds.
+FROM denho/faved@sha256:a0f4d9386b706c4d74f398323cf4315667e204bf833f579c25b9512cd1977046
 
 EXPOSE 80
 
