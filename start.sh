@@ -27,6 +27,11 @@ for f in /etc/apache2/sites-enabled/*; do
   echo "removed $f"
 done
 
+echo "=== ensuring storage volume writable by www-data:"
+mkdir -p /var/www/html/storage/img 2>/dev/null || true
+chown -R www-data:www-data /var/www/html/storage 2>/dev/null || true
+ls -ld /var/www/html/storage /var/www/html/storage/img 2>/dev/null || true
+
 echo "=== rebinding Apache to PORT=${PORT:-80}:"
 LISTEN_PORT="${PORT:-80}"
 if [ "$LISTEN_PORT" != "80" ]; then
