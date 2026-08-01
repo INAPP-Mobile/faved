@@ -2,7 +2,7 @@
 
 A lightweight, privacy-first bookmark manager with a clean, fast UI — self-hosted on Railway.
 
-[![Deploy to Railway](https://railway.app/button.svg)](https://railway.com/deploy/zOL7cT)
+[![Deploy to Railway](https://railway.app/button.svg)](https://railway.com/deploy/VgG7Wh)
 
 ## Features
 
@@ -21,8 +21,9 @@ A lightweight, privacy-first bookmark manager with a clean, fast UI — self-hos
 
 ## Volumes
 
-- `/var/www/html/storage` — Persistent bookmark and tag data
-- `/tmp` — Temporary cache and session data
+- `/var/www/html/storage` — Persistent bookmark and tag data (SQLite database + bookmark images)
+
+Note: Railway allows one volume per service; sessions use ephemeral `/tmp` and are reset on redeploy (bookmark data is unaffected).
 
 ## License
 
@@ -53,7 +54,6 @@ This template runs Faved on Railway, a cloud platform that handles infrastructur
 | Dependency | Description |
 |---|---|
 | Persistent volume `/var/www/html/storage` | Bookmark and tag data storage |
-| Persistent volume `/tmp` | Temporary cache and session data |
 | Railway account | Must have access to a single service |
 
 ## Quick Start
