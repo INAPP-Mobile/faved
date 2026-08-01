@@ -2,7 +2,11 @@
 
 A lightweight, privacy-first bookmark manager with a clean, fast UI — self-hosted on Railway.
 
-[![Deploy to Railway](https://railway.app/button.svg)](https://railway.com/deploy/VgG7Wh)
+[![Deploy to Railway](https://railway.app/button.svg)](https://railway.com/deploy/faved)
+
+## Why Deploy
+
+Faved is a lightweight, SQLite-backed bookmark manager that runs on a single Railway service with one persistent volume — no external database, no complex setup. Deploy in under two minutes, and your bookmarks survive restarts and redeploys.
 
 ## Features
 
