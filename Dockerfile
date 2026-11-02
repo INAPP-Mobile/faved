@@ -1,6 +1,6 @@
 # Pinned to the exact digest verified healthy on Railway (equals :latest / 2.9.1 as
 # of 2026-07-31). Avoids :latest tag drift between builds.
-FROM denho/faved@sha256:f63ee05ff4fb52e7d138fe14b299466acdc72c4b1f28168aa9aef980fe4d091a
+FROM denho/faved@sha256:c2ef3f9f45608054f7d28f3e6757c68d307938bcc26376c9ad4b48d77462f997
 
 EXPOSE 80
 
